@@ -1,8 +1,183 @@
-<html>
-<!-- Insert these code snippets into your external site page in the order shown. -->
-<!-- Insert these <script> tags directly above the embedded form. -->
-<script async="async" src="https://marketingorg2.my.site-com.8ehxsog1arlc1q3nd80d6oj.ac.crm.dev:6101/lp/assets/scripts/external-forms-host.min.js"></script>
-<script async="async" src="https://marketingorg2.my.site-com.8ehxsog1arlc1q3nd80d6oj.ac.crm.dev:6101/lp/assets/lightning_out_embed/prod/en-US/MC6L4X2GNNNRH57NKRKRVNQCNFRA.js" onload="window.sfdc_forms?sfdc_forms.init():window.sfdc_forms={loReady:!0}"></script>
-<!-- This tag contains the form. Add it to your page where you want the form to be located. -->
-<fragment-z4va8sw223jal02i0x9guitdkjapzcngx7bzxifg7r5 title="Marketing Form" id="container" data-recaptcha-site-key="" data-web-tracking="true" data-external-form="true"></fragment-z4va8sw223jal02i0x9guitdkjapzcngx7bzxifg7r5>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact us – Marketing Form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,400&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0f0f12;
+      --surface: #1a1a1f;
+      --surface-elevated: #232329;
+      --border: #2e2e36;
+      --text: #e8e8ec;
+      --text-muted: #9a9aa6;
+      --accent: #3b9b7a;
+      --accent-hover: #4ab88d;
+      --accent-muted: rgba(59, 155, 122, 0.15);
+      --radius: 12px;
+      --radius-lg: 20px;
+      --shadow: 0 24px 48px -12px rgba(0, 0, 0, 0.5);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "DM Sans", system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+
+    .page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1.5rem;
+      background:
+        radial-gradient(ellipse 80% 50% at 50% -20%, var(--accent-muted), transparent),
+        var(--bg);
+    }
+
+    .container {
+      width: 100%;
+      max-width: 560px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+
+    .eyebrow {
+      font-size: 0.8125rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.75rem;
+    }
+
+    h1 {
+      font-family: "Fraunces", Georgia, serif;
+      font-size: clamp(1.75rem, 4vw, 2.25rem);
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.02em;
+    }
+
+    .subtitle {
+      font-size: 1rem;
+      color: var(--text-muted);
+      max-width: 36ch;
+      margin: 0 auto;
+    }
+
+    .form-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      box-shadow: var(--shadow);
+    }
+
+    .form-card #container {
+      display: block;
+      min-height: 200px;
+    }
+
+    /* Style the embedded form fragment and its children */
+    .form-card ::ng-deep input,
+    .form-card input,
+    .form-card select,
+    .form-card textarea {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      font-family: inherit;
+      font-size: 1rem;
+      color: var(--text);
+      background: var(--surface-elevated);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .form-card input:focus,
+    .form-card select:focus,
+    .form-card textarea:focus {
+      outline: none;
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px var(--accent-muted);
+    }
+
+    .form-card ::ng-deep button[type="submit"],
+    .form-card button[type="submit"] {
+      width: 100%;
+      padding: 0.875rem 1.5rem;
+      font-family: inherit;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #fff;
+      background: var(--accent);
+      border: none;
+      border-radius: var(--radius);
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .form-card ::ng-deep button[type="submit"]:hover,
+    .form-card button[type="submit"]:hover {
+      background: var(--accent-hover);
+    }
+
+    footer {
+      margin-top: 2rem;
+      text-align: center;
+      font-size: 0.875rem;
+      color: var(--text-muted);
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="container">
+      <header>
+        <p class="eyebrow">Get in touch</p>
+        <h1>We'd love to hear from you</h1>
+        <p class="subtitle">Fill out the form below and we’ll get back to you as soon as we can.</p>
+      </header>
+
+      <div class="form-card">
+        <!-- Insert these <script> tags directly above the embedded form. -->
+        <script async="async" src="https://marketingorg2.my.site-com.8ehxsog1arlc1q3nd80d6oj.ac.crm.dev:6101/lp/assets/scripts/external-forms-host.min.js"></script>
+        <script async="async" src="https://marketingorg2.my.site-com.8ehxsog1arlc1q3nd80d6oj.ac.crm.dev:6101/lp/assets/lightning_out_embed/prod/en-US/MC6L4X2GNNNRH57NKRKRVNQCNFRA.js" onload="window.sfdc_forms?sfdc_forms.init():window.sfdc_forms={loReady:!0}"></script>
+        <fragment-z4va8sw223jal02i0x9guitdkjapzcngx7bzxifg7r5 title="Marketing Form" id="container" data-recaptcha-site-key="" data-web-tracking="true" data-external-form="true"></fragment-z4va8sw223jal02i0x9guitdkjapzcngx7bzxifg7r5>
+      </div>
+
+      <footer>
+        <p>By submitting, you agree to our <a href="#">privacy policy</a>.</p>
+      </footer>
+    </div>
+  </div>
+</body>
 </html>
